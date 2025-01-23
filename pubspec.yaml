@@ -1,0 +1,91 @@
+name: ameny
+description: Un projet Flutter pour gérer les images et les icônes
+
+publish_to: 'none' # Pour ne pas publier sur pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Package pour la sélection d'images depuis la caméra ou la galerie
+  image_picker: ^1.1.2
+
+  # Package pour l'intégration avec Supabase (base de données et authentification)
+  supabase_flutter: ^0.3.3
+
+  # HTTP pour effectuer des requêtes réseau
+  http: ^0.13.6
+
+  # Google ML Kit pour la reconnaissance des barcodes et du texte
+  google_ml_kit: ^0.10.0
+
+  # Google ML Kit pour la reconnaissance de texte
+  google_mlkit_text_recognition: ^0.2.0
+
+  # Package pour gérer l'état avec Provider
+  provider: ^6.0.5
+
+  # Stocker les préférences utilisateur de manière locale
+  shared_preferences: ^2.3.5
+
+  # Package pour la gestion du cache d'images à partir du réseau
+  cached_network_image: ^3.2.0
+
+  # Package pour effectuer la reconnaissance de texte via OCR (Tesseract)
+  flutter_tesseract_ocr: ^0.4.28
+
+  # Localisation Flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Cryptographie
+  crypto: ^3.0.1
+
+  # Pour l'adaptation de la mise en page en fonction de l'écran
+  flutter_screenutil: ^5.0.0
+
+  # Pour envoyer des emails
+  mailer: ^6.0.0
+
+  # Package pour ajouter des étoiles de notation à votre application
+  flutter_rating_bar: ^4.0.0
+
+  # Pour la validation des emails
+  email_validator: ^3.0.0
+
+  # Utilisation des dates avec la bibliothèque `intl`
+  intl: ^0.19.0
+
+  # Générer des fichiers de traduction de localisation
+  intl_utils: ^2.0.0
+
+  # Gérer l'état de l'application de manière réactive avec Riverpod
+  flutter_riverpod: ^2.0.0
+
+  # Package de traitement d'images
+  image: ^4.5.2
+
+  # Package pour la prise en charge du picker d'images dans le navigateur (pour Flutter Web)
+  image_picker_for_web: ^2.2.0
+
+  # Package pour le stockage de fichiers dans le système
+  path_provider: ^2.1.5
+
+  # Package pour lire et manipuler les métadonnées EXIF des images
+  exif: ^3.3.0
+  permission_handler: ^10.0.0
+
+flutter:
+  uses-material-design: true
+
+
+  # Définition des assets de l'application
+  assets:
+    - assets/images/  # Assurez-vous que ce répertoire existe avec les icônes nécessaires
+
+  # Activer la génération de fichiers de localisation
+  generate: true

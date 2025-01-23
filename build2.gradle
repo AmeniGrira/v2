@@ -1,0 +1,4 @@
+android {
+    namespace 'com.example.app'
+    // ... other configurations ...
+}
